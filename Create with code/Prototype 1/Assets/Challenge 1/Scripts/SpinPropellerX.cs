@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SpinPropellerX : MonoBehaviour
 
 {
-    public float degrees 90;
+    public float speed = 1000f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,6 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.)
+        transform.Rotate(0, 0, speed * Time.deltaTime);
     }
 }
